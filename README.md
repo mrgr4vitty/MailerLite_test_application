@@ -12,13 +12,16 @@ Although the project's files have been well commented, But I prefer to talk abou
 4. I used Vuetify as UI library (and rewrite all the front-end code again) because, in a full Vue-based project, It is better than Bootstrap/jQuery combination.
 5. I used Docker to convey the services I needed. Laradock is a good option while you want a fast setup.
 6. I used Nginx/MySQL/PHPMyAdmin/PHP-fpm/workspace services of Laradock.
-7. on an excellent SPA, you have to use a service like Redis to handle Queues, Notifications, Broadcasts, etc. and on client-side Laravel Echo and SocketJs. But here I didn't use any because the scope of application was too small and straightforward.
+7. On an excellent SPA, you have to use a service like Redis to handle Queues, Notifications, Broadcasts, etc. and on client-side Laravel Echo and SocketJs. But here I didn't use any because the scope of application was too small and straightforward.
 8. As supposed, I used neither an authentication system nor an authorization system. But if it was a concern JWT (Api Auth) can be used for the first one and Laravel Policies/Gates for the second one.
 
 #### Project Tests/Security
 1. Project code has been rewritten in a TRUE MVC format, and the security of codes has been improved.
 2. I have created so dummy files; however, they may be empty, but I had to emphasize their importance (like Observers, Notifications, etc.).
 3. I have used PHPUnit to write tests for project features. The scope of the project was not so significant to write units and features at the same time. The tests examine every route and controller method that exists.
+4. For Testing the VueJs ecosystem, First I installed Jest but then I decided to install and try Mocha because of some ease of use and superior integration of Mocha with the whole ecosystem (Also it is recommended by vue-test-utils). I didn't put the same effort as server-side in writing tests for the client-side because:
+    1. The project and components are small and straightforward.
+    2. Developer Tools and Vue plugin for browsers can handle this project completely.
 
 #### Project Logic
 1. I have commented and explained the project logic in every piece of code.
