@@ -1,0 +1,18 @@
+.alert-fade-enter-active {
+  transition: all 0.5s ease;
+}
+
+.alert-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.alert-fade-enter,
+.alert-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.alert-fade-move {
+  transition: transform 1s;
+}
+
